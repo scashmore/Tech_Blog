@@ -16,7 +16,7 @@ const hbs = exphbs.create({ helpers });
 const sess = {
   secret: 'AskReddit',
   cookie: {
-        expires: 10 * 60 * 1000
+        expires: 600000
   },
   resave: true,
   rolling: true,
