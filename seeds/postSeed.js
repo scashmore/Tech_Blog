@@ -23,7 +23,7 @@ const postData = [
         user_id: 3
     },
     {
-        title: "Handelbars!",
+        title: "Handlebars!",
         post_content: "No, not the kind on your bike",
         user_id: 4
     }
