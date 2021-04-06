@@ -1,0 +1,84 @@
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+li {
+    border-radius: 10px;
+    border-style: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #eee;
+    background-color: #232323;
+    margin: 3%;
+}
+.head {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.title {
+    font-size: 20px;
+    margin-left: 5%;
+}
+.user {
+    font-size: 15px;
+    margin-left: 5%;
+}
+.date {
+    font-size: 10px;
+    margin-left: 5%;
+}
+.content {
+    margin-top: 2%;
+    border-top: #eee solid;;
+    border-width: 3px;
+}
+.text {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    margin-left: 5%;
+}
+.dropdowncomments {
+    padding: 2%;
+    background-color: #121212;
+    border-radius: 10px;
+    width: 130% !important;
+    left: 5px !important;
+    margin-bottom: 2%;
+}
+.commentbtn {
+    margin-top: 2%;
+    margin-bottom: 4%;
+    margin-left: 80%;
+    border-radius: 10px;
+}
+.uk-drop {
+    position: inherit !important;
+    z-index: 0;
+    display: none;
+    box-sizing: border-box;
+}
+.navigation {
+    color: #eee;
+    background-color: #121212;
+}
+.naver {
+    margin-left: 5%;
+}
+.tech {
+    margin-left: 5%;
+}
+.login {
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.logsign {
+    display: flex;
+    flex-direction: row;
+    background-color: 	hsl(0, 0%, 7%, .95);
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%
+}

@@ -1,0 +1,54 @@
+<ul>
+    {{#each posts as |post|}}
+    <li class="posts">
+        <div class="head">
+            <div class="title">
+                {{title}}
+            </div>
+            <div class="user">
+                Posted by {{user.username}}
+            </div>
+            <div class="date">
+                {{format_date post.created_at}}
+            </div>
+        </div>
+        <div class="content">
+            <div class="text">{{post_content}}</div>
+        </div>
+        <div class="uk-inline">
+            <button type="button" class="commentbtn">Comments</button>
+            <div uk-drop="mode: click" class="dropdowncomments">
+
+
+                {{#each comment as |comment|}}
+    <li>
+        <article class="uk-comment uk-visible-toggle" tabindex="-1">
+            <header class="uk-comment-header uk-position-relative">
+                <div class="uk-grid-medium uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset"
+                                href="#">{{user.username}}</a></h4>
+                    </div>
+                </div>
+                <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted"
+                        href="#">Reply</a></div>
+            </header>
+            <div class="uk-comment-body">
+                <p>{{comment_text}}</p>
+            </div>
+        </article>
+    </li>
+    {{else}}
+    <h1>There are no comments... &#128549</h1>
+    {{/each}}
+    </div>
+    </div>
+
+    </li>
+    {{else}}
+    <h1>there are no posts</h1>
+    {{/each}}
+</ul>

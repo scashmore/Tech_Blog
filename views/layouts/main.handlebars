@@ -6,9 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/styles.css">
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/js/uikit-icons.min.js"></script>
 </head>
 
 <body>
+   <header class="display-flex justify-space-between align-center p-2 navigation">
+        <h1 class="tech">
+          <a class="no-button" href="/">Tech Blog</a>
+        </h1>
+        <nav class="naver">
+          <span><a class="no-button" href="/">Home</a></span> |
+          <!-- Conditionally render login or logout links -->
+          {{#if logged_in}}
+          <a class="no-button" href="/dashboard">Dashboard</a> |
+          <button class="no-button" id="logout">Logout {{user.name}}</button>
+          {{else}}
+          <a href="/login">Login</a>
+          {{/if}}
+        </nav>
+      </header>
   <main>
     {{{ body }}}
   </main>
